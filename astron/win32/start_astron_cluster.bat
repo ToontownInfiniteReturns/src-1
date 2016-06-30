@@ -1,3 +1,3 @@
 @echo off
-cd ..
+cd C:\repos\src\astron
 astrond --loglevel info config/cluster.yml
