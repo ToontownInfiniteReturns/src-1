@@ -5684,6 +5684,7 @@ CagedToonBattleThreeMaxAdvice = 106
 CashbotBossHadEnough = "That's it.  I've had enough of these pesky Toons!"
 CashbotBossOuttaHere = "I've got a train to catch!"
 ResistanceToonName = 'Mata Hairy'
+ResistanceToonCongratulations = "You did it!  Congratulations!\x07You're an asset to the Resistance!\x07Here's a special phrase you can use in a tight spot:\x07%s\x07When you say it, %s.\x07Take five of 'em. You earned it afterall! Just promise me you'll use them wisely."
 ResistanceToonToonupInstructions = 'all the Toons near you will gain %s Laff points'
 ResistanceToonToonupAllInstructions = 'all the Toons near you will gain full Laff points'
 ResistanceToonMoneyInstructions = 'all the Toons near you will gain %s Jellybeans'
