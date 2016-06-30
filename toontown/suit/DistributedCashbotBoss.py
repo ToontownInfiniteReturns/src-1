@@ -916,7 +916,9 @@ class DistributedCashbotBoss(DistributedBossCog.DistributedBossCog, FSM.FSM):
                 instructions = TTLocalizer.ResistanceToonMoneyInstructions % value
         elif menuIndex == ResistanceChat.RESISTANCE_DANCE:
             if value == -1:
-                instructions = TTLocalizer.ResistanceDanceInstructions
+                instructions = TTLocalizer.ResistanceToonDanceInstructions
+            else:
+                instructions = TTLocalizer.ResistanceToonDanceInstructions
         elif menuIndex == ResistanceChat.RESISTANCE_RESTOCK:
             if value == -1:
                 instructions = TTLocalizer.ResistanceToonRestockAllInstructions

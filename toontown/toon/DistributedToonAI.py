@@ -2608,6 +2608,14 @@ class DistributedToonAI(DistributedPlayerAI.DistributedPlayerAI, DistributedSmoo
             else:
                 self.addMoney(msgValue)
             self.notify.debug('Money for ' + self.name)
+        elif msgType == ResistanceChat.RESISTANCE_DANCE:
+            if msgValue == -1:
+                effect = BattleParticles.loadParticleFile('resistanceEffectSparkle.ptf')
+                fadeColor = VBase4(1, 0.5, 1, 1)
+                for toonId in nearbyToons:
+                    toon = base.cr.doId2do.get(toonId)
+                    if toon and (not toon.ghostMode):
+                        toon.setAnimState('victory')
 
     def squish(self, damage):
         self.takeDamage(damage)
