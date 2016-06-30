@@ -491,7 +491,8 @@ class DistributedCashbotBossAI(DistributedBossCogAI.DistributedBossCogAI, FSM.FS
         for toonId in self.involvedToons:
             toon = self.air.doId2do.get(toonId)
             if toon:
-                toon.addResistanceMessage(self.rewardId)
+                for i in xrange(5):
+                    toon.addResistanceMessage(self.rewardId)
                 toon.b_promote(self.deptIndex)
 
     def exitVictory(self):
